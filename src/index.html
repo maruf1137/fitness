@@ -23,19 +23,19 @@
             </div>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#" class="nav__link">home</a>
+                    <a href="#home" class="nav__link">home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">about us</a>
+                    <a href="#about" class="nav__link">about us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">classes</a>
+                    <a href="#classes" class="nav__link">classes</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">news</a>
+                    <a href="#news" class="nav__link">news</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">contact</a>
+                    <a href="#contact" class="nav__link">contact</a>
                 </li>
             </ul>
             <div class="nav__contact">
@@ -51,30 +51,32 @@
         <div class="mobile-menu">
             <div class="mobile-menu__icon" id="menu">
                 <i class="fas fa-bars"></i>
+                <!-- menu -->
             </div>
             <ul class="mobile-menu__list">
                 <div class="mobile-menu__close" id="close">
                     <i class="fas fa-times"></i>
+                    <!-- close -->
                 </div>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">home</a>
+                    <a href="#home" class="mobile-menu__link" onclick="closeNav()">home</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">about us</a>
+                    <a href="#about" class="mobile-menu__link" onclick="closeNav()">about us</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">classes</a>
+                    <a href="#classes" class="mobile-menu__link" onclick="closeNav()">classes</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">news</a>
+                    <a href="#news" class="mobile-menu__link" onclick="closeNav()">news</a>
                 </li>
                 <li class="mobile--manu__item">
-                    <a href="#" class="mobile-menu__link">contact</a>
+                    <a href="#contact" class="mobile-menu__link" onclick="closeNav()">contact</a>
                 </li>
             </ul>
         </div>
 
-        <header class="header">
+        <header class="header" id=home>
             <div class="row header-content">
                 <div class="main-content">
                     <p class="p-text main-content__text mb-sm">
@@ -109,7 +111,7 @@
             </div>
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="row">
                 <div class="about">
                     <div class="about__content">
@@ -141,7 +143,7 @@
             </div>
         </section>
 
-        <section class="classes-section">
+        <section class="classes-section" id="classes">
             <div class="classes">
                 <div class="classes__content">
                     <div class="row">
@@ -415,7 +417,7 @@
 
         <!-- newse section -->
 
-        <section class="newse-section">
+        <section class="newse-section" id="news">
             <div class="row tac mb-hg">
                 <h2 class="heading-2">Recent News </h2>
                 <div class="line"></div>
@@ -470,7 +472,7 @@
 
         <!-- contact section -->
 
-        <div class="contact-section">
+        <div class="contact-section" id="contact">
             <div class="contact">
                 <div class="contact__left">
                     <h2 class="heading-2">contact us</h2>

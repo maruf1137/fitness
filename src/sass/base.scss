@@ -20,11 +20,13 @@
   text-transform: capitalize;
   text-decoration: none;
   list-style: none;
+  // scroll-behavior: smooth;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: $largest) {
     font-size: 58.5%;
@@ -52,6 +54,7 @@ body {
   color: #fff;
   font-family: futuraMd;
   overflow-x: hidden;
+  // scroll-behavior: smooth;
 }
 
 .row {

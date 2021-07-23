@@ -36,13 +36,32 @@ menuBtn.addEventListener('click', function(){
 });
 
 closeBtn.addEventListener('click', function(){
-  // mobileMenu.style.transform = "translateX(-100%)";
+  closeNav();
+});
+
+const closeNav = function(){
   mobileMenu.classList.toggle('open-menu');
-})
+};
 
 
 
+// links functionalitys
+// const homeBtn = document.querySelector('#home-btn');
+// const aboutBtn = document.querySelector('#home-btn');
+// const classesBtn = document.querySelector('#home-btn');
+// const newsBtn = document.querySelector('#home-btn');
+// const contactBtn = document.querySelector('#home-btn');
 
+// homeBtn.addEventListener('click', function(){
+//   closeNav();
+// })
 
+// homeBtn.addEventListener('click', function(){
+//   closeNav();
+// })
+
+// homeBtn.addEventListener('click', function(){
+//   closeNav();
+// })
 
 
