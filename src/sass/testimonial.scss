@@ -1,0 +1,90 @@
+.testimonial-section {
+  background-color: #181a1f;
+  position: relative;
+
+  .owl-carousel .owl-nav .owl-prev i,
+  .owl-carousel .owl-nav .owl-next i {
+    font-size: 4rem;
+    color: $color-primary;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    background-color: transparent;
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+
+  .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background-color: $color-primary;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
+
+.testimonial {
+  max-width: 1350px;
+  margin: 0 auto;
+
+  .item {
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $medium) {
+      width: 100%;
+    }
+  }
+
+  .heading-2 {
+    color: #fff;
+  }
+
+  .p-text {
+    width: 60%;
+    margin: 2rem auto;
+  }
+
+  &__user-box {
+  }
+
+  &__user-img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}

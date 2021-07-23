@@ -1,0 +1,77 @@
+.body-building--section {
+  background: #fff;
+}
+
+.body-building {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 4rem 2rem;
+  width: 95%;
+  margin: 0 auto;
+
+  &__item {
+    padding: 4rem 6rem;
+    text-align: center;
+
+    &--1 {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)),
+          url(../img/body-building-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .body-building__btn {
+        background-color: $colr-secondary;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
+    }
+
+    &--2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../img/body-building-2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .body-building__btn {
+        background-color: #945b9f;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #fff;
+          }
+      }
+    }
+
+    &--3 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)),
+            url(../img/body-building-3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .body-building__btn {
+        background-color: #5eb6e1;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #fff;
+          }
+      }
+    }
+  }
+
+  &__text {
+    margin: 0.5rem 0 1.5rem 0;
+  }
+}

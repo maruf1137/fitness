@@ -1,0 +1,105 @@
+.contact-section {
+  background-color: $color-black;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+  &__left {
+    padding: 5rem 10rem 5rem 0;
+    max-width: 600px;
+    justify-self: end;
+
+    @media only screen and (max-width: $large) {
+      justify-self: center;
+      padding: 5rem 0;
+    }
+
+    @media only screen and (max-width: $medium) {
+      padding: 5rem 5rem;
+    }
+
+    @media only screen and (max-width: $smaller) {
+      padding: 5rem 2rem;
+    }
+
+    .heading-2 {
+      color: #fff;
+    }
+  }
+
+  &__form {
+    .input {
+      width: 100%;
+      border: 1px solid $color-primary;
+      outline: none;
+      padding: 1.2rem 2rem;
+      margin-bottom: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+
+      @media only screen and (max-width: $smaller) {
+        width: 80%;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  &__current {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+
+  &__email {
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding-right: 1.2rem;
+    border-right: 1px solid #fff;
+  }
+
+  &__number {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  &__social {
+  }
+
+  &__social a {
+    color: $color-primary;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+      font-size: 2rem;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__right {
+    background-image: url(../img/contact-image.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $large) {
+      height: 500px;
+    }
+  }
+
+  .btn-submit {
+    width: 100%;
+
+    @media only screen and (max-width: $smaller) {
+      width: 80%;
+    }
+  }
+}

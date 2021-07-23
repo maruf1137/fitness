@@ -1,0 +1,72 @@
+@font-face {
+  font-family: futuraBold;
+  src: url(../fonts/Futura-Bold-font.ttf);
+}
+
+@font-face {
+  font-family: futuraBook;
+  src: url(../fonts/Futura-Bookf-ont.ttf);
+}
+
+@font-face {
+  font-family: futuraMd;
+  src: url(../fonts/futura-medium-bt.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $largest) {
+    font-size: 58.5%;
+  }
+
+  @media only screen and (max-width: $medium) {
+    font-size: 54.5%;
+  }
+
+  @media only screen and (max-width: $small) {
+    font-size: 50.5%;
+  }
+
+  @media only screen and (max-width: $smaller) {
+    font-size: 38.5%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  // word-spacing: 1.2rem;
+  // letter-spacing: .1rem;
+  color: #fff;
+  font-family: futuraMd;
+  overflow-x: hidden;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $largest) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: $small) {
+    padding: 0 2rem;
+  }
+}
+
+section {
+  padding: 8rem 0;
+}

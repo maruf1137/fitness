@@ -1,0 +1,111 @@
+.team-section {
+}
+
+.team {
+  &__content {
+    width: 70%;
+    margin: 0 auto 5rem auto;
+
+    @media only screen and (max-width: $small) {
+      width: 100%;
+    }
+  }
+
+  .heading-2 {
+    line-height: 0.8;
+  }
+  .p-text {
+    color: $color-black;
+  }
+
+  &__member {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 4rem 2rem;
+
+    @media only screen and (max-width: $smaller) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    &--item {
+      color: $color-black;
+      text-align: center;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+
+    &--img {
+      height: 40rem;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
+    &--name {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &--position {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__social {
+    margin: 1rem 0 2rem 0;
+
+    &--list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-column-gap: 1.5rem;
+
+      li {
+      }
+    }
+
+    &--link {
+      font-size: 2.3rem;
+
+      i {
+        transition: all 0.5s;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      &:hover i {
+        // transform: rotate(358deg);
+        background-color: #f0f0f0;
+      }
+
+      .fa-facebook-f {
+        color: #0739ff;
+      }
+
+      .fa-twitter {
+        color: #00a2ff;
+      }
+
+      .fa-instagram {
+        color: #f933df;
+      }
+    }
+  }
+}
+
+.btn-team {
+  transition: all 0.3s;
+}
+
+.btn-team:hover {
+  background-color: $colr-secondary;
+}

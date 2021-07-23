@@ -1,0 +1,56 @@
+.newse-section {
+  background-color: #fff;
+}
+
+.newse {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem;
+
+  @media only screen and (max-width: $smaller) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  &__item {
+    background-color: black;
+    padding: 2rem 3rem;
+  }
+
+  &__image {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  .heading-3 {
+    margin: 3rem 0;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: $color-primary;
+  }
+
+  .p-text {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-newse {
+  color: $color-black;
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: transparent;
+  }
+}

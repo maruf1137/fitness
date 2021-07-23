@@ -1,0 +1,91 @@
+.p-text {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.heading-1 {
+  font-size: 5.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: futuraMd;
+}
+
+.heading-2 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  color: $color-black;
+  line-height: normal;
+}
+
+.heading-3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.heading-5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $color-black;
+}
+
+.line {
+  height: 0.2rem;
+  width: 8rem;
+  background-color: $color-primary;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn {
+  font-size: 1.5rem;
+  color: $color-black;
+  padding: 1.5rem 4rem;
+  background-color: $color-primary;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 6rem;
+}
+
+.mt-sm {
+  margin-top: 2rem;
+}
+.mt-md {
+  margin-top: 3rem;
+}
+.mt-lg {
+  margin-top: 4rem;
+}
+.mt-hg {
+  margin-top: 6rem;
+}
+
+.tac {
+  text-align: center;
+}

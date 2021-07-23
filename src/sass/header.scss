@@ -1,0 +1,33 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/bg-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: min-content minmax(6rem, min-content) min-content;
+  grid-template-columns: minmax(min-content, 777px);
+
+  &__text {
+  }
+
+  &__heading {
+  }
+
+  &__btn {
+    justify-self: start;
+    align-self: start;
+  }
+}
