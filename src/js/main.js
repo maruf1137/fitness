@@ -21,47 +21,27 @@ $(".owl-carousel").owlCarousel({
 
 window.addEventListener("scroll", function () {
   const Nav = document.querySelector(".main");
-  Nav.classList.toggle('sticky', window.scrollY > 0)
+  Nav.classList.toggle("sticky", window.scrollY > 10);
 });
 
 // responsive nav bar
-const menuBtn = document.querySelector('#menu');
-const closeBtn = document.querySelector('#close')
-const mobileMenu = document.querySelector('.mobile-menu__list');
+const menuBtn = document.querySelector("#menu");
+const closeBtn = document.querySelector("#close");
+const mobileMenu = document.querySelector(".mobile-menu__list");
+const overlay = document.querySelector(".overlay");
 
-
-menuBtn.addEventListener('click', function(){
-  // mobileMenu.style.transform = "translateX(0)";
-  mobileMenu.classList.toggle('open-menu');
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.add("open-menu");
+  overlay.classList.add("open-menu");
 });
 
-closeBtn.addEventListener('click', function(){
-  closeNav();
-});
-
-const closeNav = function(){
-  mobileMenu.classList.toggle('open-menu');
+const closeNav = function () {
+  mobileMenu.classList.remove("open-menu");
+  overlay.classList.remove("open-menu");
 };
 
-
-
-// links functionalitys
-// const homeBtn = document.querySelector('#home-btn');
-// const aboutBtn = document.querySelector('#home-btn');
-// const classesBtn = document.querySelector('#home-btn');
-// const newsBtn = document.querySelector('#home-btn');
-// const contactBtn = document.querySelector('#home-btn');
-
-// homeBtn.addEventListener('click', function(){
-//   closeNav();
-// })
-
-// homeBtn.addEventListener('click', function(){
-//   closeNav();
-// })
-
-// homeBtn.addEventListener('click', function(){
-//   closeNav();
-// })
-
-
+const arr = [overlay, closeBtn];
+console.log(arr);
+arr.forEach((el) => {
+  el.addEventListener("click", closeNav);
+});

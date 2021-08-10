@@ -1,0 +1,15 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-call" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color2, #5eb6e1)" stroke="#5eb6e1" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#5eb6e1" style="stroke: var(--color2, #5eb6e1)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
+<path fill="#5eb6e1" style="fill: var(--color2, #5eb6e1)" d="M11.637 14.675c1.076 2.074 2.726 3.724 4.739 4.771l0.061 0.029 1.6-1.6c0.131-0.131 0.312-0.213 0.513-0.213 0.082 0 0.162 0.014 0.236 0.039l-0.005-0.002c0.774 0.263 1.666 0.415 2.593 0.415 0.002 0 0.005 0 0.007 0h-0c0.402 0.001 0.728 0.327 0.729 0.729v2.543c-0.001 0.402-0.327 0.728-0.729 0.729h-0c-6.838-0.002-12.38-5.546-12.38-12.384 0-0.001 0-0.002 0-0.003v0c0.001-0.402 0.327-0.728 0.729-0.729h2.55c0.402 0.001 0.728 0.327 0.729 0.729v0c0 0.004 0 0.008 0 0.012 0 0.925 0.152 1.815 0.432 2.646l-0.017-0.058c0.022 0.067 0.035 0.143 0.035 0.223 0 0.203-0.083 0.387-0.217 0.52l-0 0z"></path>
+</symbol>
+
+<symbol id="icon-phone" viewBox="0 0 32 32">
+<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+</symbol>
+</defs>
+</svg>
+
+

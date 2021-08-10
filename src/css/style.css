@@ -274,11 +274,17 @@ section {
       .nav__contact {
         display: none; } }
     .nav__contact--icon {
-      height: 3.5rem;
-      width: 3.5rem; }
-      .nav__contact--icon img {
-        height: 100%;
-        width: 100%; }
+      height: 4rem;
+      width: 4rem;
+      border: 1px solid #5eb6e1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nav__contact--icon svg {
+        height: 60%;
+        width: 60%;
+        fill: #5eb6e1; }
     .nav__contact--number {
       color: #000; }
 
@@ -291,6 +297,22 @@ section {
   z-index: 2;
   box-shadow: 0rem 0.2rem 1.5rem rgba(0, 0, 0, 0.2); }
 
+.overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.809);
+  z-index: 100;
+  transform: translate(-100%);
+  z-index: 3;
+  transition: all 0.3s; }
+
+.open-menu {
+  transform: translate(0); }
+
 .mobile-menu {
   display: none; }
   @media only screen and (max-width: 62.5em) {
@@ -302,7 +324,7 @@ section {
     top: 0.7rem;
     right: 4rem;
     font-size: 3.5rem;
-    z-index: 3;
+    z-index: 2;
     cursor: pointer; }
   .mobile-menu__list {
     position: fixed;
@@ -330,8 +352,11 @@ section {
     top: 5rem;
     right: 3rem;
     font-size: 3.5rem;
-    color: #fff;
-    cursor: pointer; }
+    color: #84c7e9;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .mobile-menu__close:hover {
+      color: #284f63; }
   .mobile-menu__link {
     font-size: 2.5rem;
     color: #fff;
