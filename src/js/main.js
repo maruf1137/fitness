@@ -1,3 +1,4 @@
+// carousel
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
@@ -19,8 +20,10 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+// sticky nav
+const Nav = document.querySelector(".main");
+
 window.addEventListener("scroll", function () {
-  const Nav = document.querySelector(".main");
   Nav.classList.toggle("sticky", window.scrollY > 10);
 });
 
@@ -41,7 +44,30 @@ const closeNav = function () {
 };
 
 const arr = [overlay, closeBtn];
-console.log(arr);
 arr.forEach((el) => {
   el.addEventListener("click", closeNav);
+});
+
+//  scroll effect
+const scrollLink = document.querySelectorAll(".scroll-link");
+const nav = document.querySelector(".nav");
+
+scrollLink.forEach((link) => {
+  link.addEventListener("click", function (el) {
+    el.preventDefault();
+    const id = el.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    const navHeight = nav.getBoundingClientRect().height;
+
+    let position = element.offsetTop - navHeight;
+
+    if (!Nav.classList.contains("sticky")) {
+      position = position - navHeight;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+  });
 });

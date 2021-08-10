@@ -280,7 +280,8 @@ section {
       border-radius: 50%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      cursor: pointer; }
       .nav__contact--icon svg {
         height: 60%;
         width: 60%;
@@ -769,7 +770,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); }
   .contact__left {
-    padding: 5rem 10rem 5rem 0;
+    padding: 5rem 10rem 5rem 5rem;
     max-width: 600px;
     justify-self: end; }
     @media only screen and (max-width: 62.5em) {

@@ -7,7 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 
   &__left {
-    padding: 5rem 10rem 5rem 0;
+    padding: 5rem 10rem 5rem 5rem;
     max-width: 600px;
     justify-self: end;
 
