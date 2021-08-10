@@ -1,14 +1,22 @@
 {
   "name": "paveldmitriev",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000f\u0000i\u0000t\u0000n\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000#\u0000 \u0000f\u0000i\u0000t\u0000n\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000#\u0000 \u0000f\u0000i\u0000t\u0000n\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000# fitness-v2 #\u0000 \u0000f\u0000i\u0000t\u0000n\u0000e\u0000s\u0000s\u0000-\u0000v\u00002\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "start" : "node-sass src/sass/main.scss src/css/style.css -w"
+    "start": "node-sass src/sass/main.scss src/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.0"
-  }
+    "node-sass": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maruf1137/fitness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maruf1137/fitness/issues"
+  },
+  "homepage": "https://github.com/maruf1137/fitness#readme"
 }
